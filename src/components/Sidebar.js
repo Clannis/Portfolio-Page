@@ -1,13 +1,13 @@
 import { Component } from "react";
 
-class Header extends Component {
+class Sidebar extends Component {
     render() {
         return (
             <section>
-                Header
+                Sidebar
             </section>
         )
     }
 }
 
-export default Header
+export default Sidebar
