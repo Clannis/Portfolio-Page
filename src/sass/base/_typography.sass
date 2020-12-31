@@ -1,2 +1,31 @@
 body
     font-family: 'Aleo', serif
+
+.heading-primary 
+    color: $color-white
+    text-transform: uppercase
+    backface-visibility: hidden // fix the shakiness of element after animation
+    margin-bottom: 6rem
+
+    &--main 
+        display: block // sets element as full widtch with line breaks before and after
+        font-size: 6rem
+        font-weight: 400 // weight is pulled from available weights from font import in html
+        letter-spacing: 3.5rem
+
+        animation-name: moveInLeft
+        animation-duration: 1s
+        animation-timing-function: ease-out
+
+        
+        //animation-delay: 3s
+        //animation-iteration-count: 3 
+
+
+    &--sub 
+        display: block
+        font-size: 2rem
+        font-weight: 700
+        letter-spacing: 1.75rem
+
+        animation: moveInRight 1s ease-out // combine animation properties and let the computer figure out where everything goes
